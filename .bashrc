@@ -29,20 +29,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
-#if [ -f ~/.bash_aliases ]; then
-#    . ~/.bash_aliases
-#fi
-
-
-# some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias l='ls -CF'
 alias ls='ls -G'
 
 # enable programmable completion features (you don't need to enable
@@ -51,9 +37,6 @@ alias ls='ls -G'
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
-
-#export JAVA_HOME='~/.java/java_home'
-#export JAVA_PLUGIN='~/.java/java_plugin'
 
 #export PS1='\[\033[1;33m\][\u@\h \W]\$\[\033[1;37m\] '
 export PS1='\[\033[1;33m\][\A \u \W]\$\[\033[1;37m\] '
@@ -77,9 +60,6 @@ export PROMPT_COMMAND='history -a'
 
 export PATH="/usr/local/share/python:$PATH"
 
-alias ct='ctool'
-
-export OPSCODE_USER=tpatterson
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
